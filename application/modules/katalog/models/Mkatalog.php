@@ -13,31 +13,14 @@ class Mkatalog extends CI_Model{
 	$hasil=$k->result_array();
 	return $hasil;
 	} */
-
-	function getdata_street(){
-		return $this->db->get('street');
-	}
-
-	function getdata_clay(){
-		return $this->db->get('clay');
-	}
-
-	function getdata_wood(){
-		return $this->db->get('wood');
-	}
-
-	function getdata_metal(){
-		return $this->db->get('metal');
-	}
-
-	function getdata_fabric(){
-		return $this->db->get('fabric');
-	}
-
 	function show_data(){
-	$k=$this->db->get('katalog');
+	$k=$this->db->get($nama_katalog);
 	$hasil=$k->result_array();
 	return $hasil;
+	}
+	
+	function getdata($where,$table){
+		return $this->db->get_where($table,$where);
 	}
 
 

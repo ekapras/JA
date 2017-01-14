@@ -463,13 +463,13 @@ color:#333;
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background-color: #00ffff;
+  background-color: #fff;
   display: inline-block;
   line-height: 30px;
   margin: 15px 5px;
 }
 .team-member .social-icons ul a:hover {
-  background-color: #272727;
+  background-color: #000;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s;

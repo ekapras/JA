@@ -7,10 +7,10 @@ class home extends MY_Controller
 	}
 
 	function index(){
-
-		$data['content_view']='home/home_v';
-		$this->template->my_template($data);
-	}
-
-
+		$data = array(
+			'data_katalog' => $this->Mhome->getdata2() 
+			);
+        $data['content_view'] = 'home/home_v';
+        $this->load->view("template/mytemplate_v",$data);
+    }
 }

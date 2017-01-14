@@ -13,7 +13,7 @@
 							<div class="team-member">
 								<img  width="420px" height="420px" src="<?php echo base_url(); ?>assets/files/images/pengembang/<?php echo $u['id']; ?>.png">
 								<div class="team-content">
-									<h3 style=" font-family: 'bitsumishi'; "><?php echo $u['nama'] ?></h3>
+									<h3 style="color: white;" style=" font-family: 'bitsumishi'; "><?php echo $u['nama'] ?></h3>
 									<span><?php echo $u['lahir'] ?></span>
 									<p><?php echo $u['catatan'] ?>.</p>
 								</div>

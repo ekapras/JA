@@ -2,6 +2,7 @@
 					<div class="container">
 						<h4 align="center">Tambah Katalog</h4>
 						<div class="col-md-6 col-md-offset-3">
+						<h3 style="color:blue;"> katalog Berhasil Ditambahkan </h3>
 							<div class="col-md-10 col-md-offset-1">
 						<?php 
 										echo form_open_multipart('admin/submit_jenis_katalog');

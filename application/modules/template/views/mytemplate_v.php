@@ -23,9 +23,6 @@
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 	<![endif]-->
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/assets/css/form-elements.css">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/assets/css/style.css">
-
 
 </head>
 <body>
@@ -50,12 +47,13 @@
 							$this->load->library('session');
 
 							if (isset($this->session->userdata['logged_in'])=='admin'){
-									$this->load->view('template/admin_login_v');
+								$this->load->template->admin();
+
 							}
 
 							else {
 								$data = array('' => '', );
-								$this->load->view('template/notlogin_v');
+								$this->load->template->umum();
 							}
 
 							?>
@@ -74,23 +72,22 @@
 			 	<footer class="footer">
 			 		
 			 		<div class="container">
-					  	<a href="#" class="scrollpoint sp-effect3">
-	                    	<img src="<?php echo base_url(); ?>assets/assets/template/img/freeze/logo.png" alt="" class="logo">
-	                	</a>
-	                	<p align="left" style="color:white;"> We Are On Social Media</p>
-	                	<div align="left" class="social-login-buttons">
-	                    	<a class="btn btn-link-1 btn-link-1-twitter" href="#" style="color:white;">
-	                    		<i class="fa fa-twitter"></i> Twitter
-	                    	</a><br>
-	                    	<a class="btn btn-link-1 btn-link-1-facebook" href="#" style="color:white;">
-	                    		<i class="fa fa-facebook"></i> Facebook
-	                    	</a><br>
-	                    	<a class="btn btn-link-1 btn-link-1-google-plus" href="#" style="color:white;">
-	                    		<i class="fa fa-google-plus"></i> Google Plus
+					  	<a href="<?php echo base_url(); ?>home" > <h2 style="color:white;  font-family:'Audiowide'; " > JSA </h2></a>
+	                	<p style="color:white;"> We Are On Social Media</p>
+	                	<div class="social-login-buttons">
+	                    	<a class="btn btn-link-1" href="#" style="color:white;">|
+	                    		<i class="fa fa-twitter"></i> | Twitter
+	                    	</a>
+	                    	<a class="btn btn-link-1" href="#" style="color:white;">|
+	                    		<i class="fa fa-facebook"></i> | Facebook
+	                    	</a>
+	                    	<a class="btn btn-link-1" href="#" style="color:white;">|
+	                    		<i class="fa fa-google-plus"></i> | Google Plus
 	                    	</a>
 	                    </div>
-	                    <p align="right" style="color:white;">@2016. All rights reserved . <br>
-	                    Template By <a href="#"> Y O M  </a></p>
+	                    <br>
+	                    <p style="color:white; float: left;">@2016. All rights reserved .</p>
+	                    <p style="color:white; float: right;">Template By <a href="#"> Y O M  </a></p>
 	            	</div>
 	            	
 			    </footer>

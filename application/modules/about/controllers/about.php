@@ -1,7 +1,7 @@
 <?php
   defined('BASEPATH')OR exit('No direct script access allowed');
 
-  class About extends MX_Controller
+  class About extends MY_Controller
   {
       public function __construct(){
         parent::__construct();
@@ -15,6 +15,6 @@
 			'data_pengembang' => $this->Mabout->tampil_data() 
 			);
         $data['content_view'] = 'about/about_v';
-        $this->load->view("template/mytemplate_v",$data);
+        $this->load->view('template/mytemplate_v',$data);
       }  
 }
